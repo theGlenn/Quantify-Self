@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="reset.css">
         <link rel="stylesheet" type="text/css" href="index.css">
+        <script type="text/javascript" src="jquery.js" /></script>
 
     </head>
     <body>
@@ -132,8 +133,7 @@
                 </div>
                 <div class="block8-2">
                     <div class="block8-2A">
-                        <p class="green-line-invers">pratique présente depuis toujours<br /><br />
-                        opportunité pour les ingénieurs</p>
+                        <p class="green-line-invers">pratique présente<br />depuis toujours<br /><br />opportunité pour<br />les ingénieurs</p>
                     </div>
                     <div class="block8-2B">
                         <div class="block8-2B_1">
@@ -149,7 +149,7 @@
             <div class="block" id="block9">
                 <div class="block9-1">
                     <div>
-                        <p>Bien-être<br /><br />
+                        <p class="green-line-invers">Bien-être<br /><br />
                             Apprendre à mieux se connaître</p>
                         <h3>l’identification au super-héros</h3>
                         <p>En supposant que chacun d’entre nous a une image de soit d’un “super héros de tout les jours”, nous avons tous le rêve de pouvoir gagner des points et de monter d’un niveau.  C’est celà qui est aujourd’hui possible en mesurant et en analysant les données de vie de tous les jours.</p>
@@ -160,7 +160,7 @@
                 </div>
                 <div class="block9-2">
                     <div>
-                        <p>monter d'un niveau<br /><br />
+                        <p class="green-line-invers">monter d'un niveau<br /><br />
                             statistique<br /><br />
                             solution facile</div>
                     <div>
@@ -181,5 +181,12 @@
                 </div>
             </div>
         </div>
+        <a class="btn-scroll"><img src="img/fleche.png"/></a>
+        <script>
+            $(".btn-scroll").click(function(){
+                console.log($("body"));
+                $("body").scrollTop( $("body") );
+            });
+        </script>
     </body>
 </html>
