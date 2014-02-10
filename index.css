@@ -87,13 +87,13 @@ position: relative;
 	padding-top: 170;
 }
 
-#block3 #right
+#right
 {
 float: right;
 width: 50%;
 }
 
-#block3 #left
+#left
 {
 /*background:yellow;*/
 float: left;
@@ -103,6 +103,11 @@ width: 50%
 #left p{
 	padding-right: 43%;
 }
+
+p #left{
+	padding-right: 43%;
+}
+
 
 #right img:nth-child(2){
 	padding-top: 10px;
