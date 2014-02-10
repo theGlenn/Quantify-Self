@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="reset.css">
         <link rel="stylesheet" type="text/css" href="index.css">
+        <script src="jquery.js"></script>
 
     </head>
     <body>
@@ -194,9 +195,21 @@
 
         <script>
            
+           var x = 2;
             $("#arrow").click(function() {
-                $.scrollTo( '#output-main', 800);
-                console.log("merde");
+
+                if(x >= 11){
+                    x = 1;
+                }
+
+                var offset = 20; //Offset of 20px
+                var blockN = "#block" + x;
+
+                 console.log(blockN);
+                $('html, body').animate({
+                    scrollTop: $(blockN).offset().top + offset
+                }, 1000);
+                x++; 
             });
         </script>
 
