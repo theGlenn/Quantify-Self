@@ -177,12 +177,13 @@ h1 span { /* alternate double */
     padding-left: 100px;
 }
 .block5-2_1A,.block5-2_1B{
-    height: 40%;
+    /*height: 40%;*/
     display: flex;
 }
 
 .block5-2_1B div {
      padding: 20px;
+     width: 46%;
 }
 
 .block5-title {
@@ -208,10 +209,20 @@ h1 span { /* alternate double */
     flex: 1;
 }
 
-.block5-2-title {
+.block5-2_2 .block5-2-title {
     text-align: center;
     padding-top: 16px;
 }
+
+.block5-2-title {
+    text-align: center;
+}
+
+.block5-2_2 p{
+   padding: 20px;
+}
+
+
 
 .block6-title {
     margin-top: 30px;
@@ -226,6 +237,7 @@ h1 span { /* alternate double */
 .block6-1 div {
    flex: 1;
    padding: 20px;
+   position: relative;
 }
 
 .block6-1-title {
@@ -233,9 +245,17 @@ h1 span { /* alternate double */
     margin-top: 30px;
 }
 
-.aligne {
+.aligne, .aligne2 {
     display: inline-block;
     text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.aligne2{
+    top: 180%;
 }
 
 .block7-1 {
