@@ -262,12 +262,23 @@ h1 span { /* alternate double */
     display: flex
 }
 
+.block9-1 h3{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
 .block9-1 div {
     flex: 1;
+    padding: 20px;
+}
+
+.block9-2A p {
+    margin-top: 50px;
 }
 
 .block9-2 div {
     flex: 1;
+    padding: 20px;
 }
 
 .block10-1 {
@@ -275,5 +286,6 @@ h1 span { /* alternate double */
 }
 
 .block10-1 div{
+    padding: 20px;
     flex: 1;
 }
