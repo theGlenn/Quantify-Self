@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="reset.css">
         <link rel="stylesheet" type="text/css" href="index.css">
-
+        <script type="text/javascript" src="jquery.js"></script> 
     </head>
     <body>
         <div class="class-content">
@@ -114,17 +114,16 @@
             </div>
             <div class="block" id="block7">
                 <div class="block7-1">
-                    <div><img src="img/picto_ballon.png" /></div>
-                    <div><img src="img/picto_fraise.png" /></div>
-                    <div><img src="img/pitco_seringue.png" /></div>
-                    <div><img src="img/pitco_coeur.png" /></div>
+                    <div class="ballon"><img src="img/picto_ballon.png" /></div>
+                    <div class="fraise"><img src="img/picto_fraise.png" /></div>
+                    <div class="seringue"><img src="img/pitco_seringue.png" /></div>
+                    <div class="coeur"><img src="img/pitco_coeur.png" /></div>
                 </div>
                 <div class="block7-2">
                     <div>
-                        <img src="img/pictovert_seringue.png" />
-                        <h3>ressentis</h3>
-                        <p>“Logger” des informations en gardant une trace de notre propre vécu, ressenti, rêves afin d’aider à apprendre à mieux se connaître.</p>  
-                        <p class="green-line-botton"></p>
+                        <img src="img/pitco_ballonvert.png" />
+                        <h3>sport</h3>
+                        <p>Le Q.S. pour un sportif, que ce soit un amateur ou un professionnel, c'est la mesure de différente données (calorique, distance parcourue, ...) visible en temps réelle, et permettant de visualiser leur progression et ainsi d'améliorer leur activitées sportives</p><p class="green-line-botton"></p>
                     </div>
                 </div>
             </div>
@@ -190,5 +189,35 @@
                 </div>
             </div>
         </div>
+        <script>
+            $(".ballon").click(function(){
+                var ballon = '<div><img src="img/pitco_ballonvert.png" /><h3>sport</h3><p>Le Q.S. pour un sportif, que ce soit un amateur ou un professionnel, c\'est la mesure de différente données (calorique, distance parcourue, ...) visible en temps réelle, et permettant de visualiser leur progression et ainsi d\'améliorer leur activitées sportives</p>  <p class="green-line-botton"></p></div>';
+
+                $(".block7-2").html(ballon);
+                $('.block7-2').fadeIn(500);
+            });
+
+            $(".fraise").click(function(){
+                var fraise = '<div><img src="img/pictorouge_fraise.png" /><h3>nutrition</h3><p>Dans le cadre de la nutrition, en général, les données récoltées sont les données caloriques, permettant un suivit précis de ce que nous mangeons, ainsi nous pousser à adopter une alimentation plus équilibrée</p>  <p class="pink-line-botton"></p></div>';
+
+                $(".block7-2").html(fraise);
+                $('.block7-2').fadeIn(500);
+            });
+
+            $(".seringue").click(function(){
+                var seringue = '<div><img src="img/pictovert_seringue.png" /><h3>ressentis</h3><p>Collectes de données, que ce soit propre à une maladie ou seulement pour avoir un point de vue globale sur son hygiène de vie, afin de garder l’oeil sur sa santé.</p><p class="green-line-botton"></p></div>';
+
+                $(".block7-2").html(seringue);
+                $('.block7-2').fadeIn(500);
+            });
+
+            $(".coeur").click(function(){
+                var coeur = '<div><img src="img/pictorouge_coeur.png" /><h3>ressentis</h3><p>“Logger” des informations en gardant une trace de notre propre vécu, ressenti, rêves afin d’aider à apprendre à mieux se connaître.</p><p class="pink-line-botton"></p></div>';
+
+                $(".block7-2").html(coeur);
+                $('.block7-2').fadeIn(500);
+            });
+
+        </script>
     </body>
 </html>
