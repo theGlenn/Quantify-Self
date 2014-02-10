@@ -7,6 +7,7 @@
 
     </head>
     <body>
+        <img id = "arrow" src="img/fleche.png">
         <div class="class-content">
             <div class="block" id="block1">
                 <h1 class ="title"><span>Q</span>uantify Yourself</h1>
@@ -190,5 +191,14 @@
                 </div>
             </div>
         </div>
+
+        <script>
+           
+            $("#arrow").click(function() {
+                $.scrollTo( '#output-main', 800);
+                console.log("merde");
+            });
+        </script>
+
     </body>
 </html>
