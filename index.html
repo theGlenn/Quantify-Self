@@ -4,9 +4,9 @@
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="reset.css">
         <link rel="stylesheet" type="text/css" href="index.css">
-        <script type="text/javascript" src="jquery.js"></script> 
-    </head>
+        <script src="jquery.js"></script>
     <body>
+        <img id = "arrow" src="img/fleche.png">
         <div class="class-content">
             <div class="block" id="block1">
                 <h1 class ="title"><span>Q</span>uantify Yourself</h1>
@@ -218,6 +218,23 @@
                 $('.block7-2').fadeIn(500);
             });
 
+           var x = 2;
+            $("#arrow").click(function() {
+
+                if(x >= 11){
+                    x = 1;
+                }
+
+                var offset = 20; //Offset of 20px
+                var blockN = "#block" + x;
+
+                 console.log(blockN);
+                $('html, body').animate({
+                    scrollTop: $(blockN).offset().top + offset
+                }, 1000);
+                x++; 
+            });
         </script>
+
     </body>
 </html>

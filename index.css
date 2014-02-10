@@ -29,6 +29,11 @@ p {
     text-align: justify;
 }
 
+#arrow{
+    /*min-width:50px;*/
+    position: fixed;
+}
+
 .class-content {
     box-sizing: border-box;
 }
