@@ -19,12 +19,6 @@ body {
     font-family: "Proxima Nova", Helvetica, Arial, sans-serif;
 }
 
-.btn-scroll {
-    position: absolute;
-    top: 0;
-    left:; 0;
-}
-
 h1,h2,h3,h4,h5,h6 {
     text-transform: uppercase;
     margin-bottom: 20px;
@@ -215,8 +209,7 @@ h1 span { /* alternate double */
 }
 
 #block7 {
-    display: flex;
-    justify-content: center;
+    display: flex
 }
 
 #block7 div {
@@ -269,23 +262,12 @@ h1 span { /* alternate double */
     display: flex
 }
 
-.block9-1 h3 {
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
 .block9-1 div {
     flex: 1;
-    padding: 20px;
 }
 
 .block9-2 div {
     flex: 1;
-    padding: 20px;
-}
-
-.block9-2 {
-    margin-top: 30px;
 }
 
 .block10-1 {
@@ -294,5 +276,4 @@ h1 span { /* alternate double */
 
 .block10-1 div{
     flex: 1;
-    padding: 30px;
 }
